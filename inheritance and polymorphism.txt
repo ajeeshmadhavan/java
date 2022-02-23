@@ -1,0 +1,69 @@
+1. Inheritance:
+Inheritance is an OOP property that allows us to derive a new class (subclass) from an existing class (superclass). 
+The subclass inherits the attributes and methods of the superclass.
+--------------------------------------------------------------------------
+2. Types of inheritance:
+a) Single level inheritance.
+b) Multiple inheritance.
+c) Multi-level inheritance.
+d) Hierachial ineheritance.
+---------------------------------------------------------------------------
+3. Advantages of inheritanec:
+a) Reusability.
+b) Less development and maintenance costs.
+c) Effective memory management
+---------------------------------------------------------------------------
+4. Method overloading:
+If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+Example:
+public class Method_Overloading {
+
+	public void add(int x, int y) {
+		System.out.println(x + y);
+
+	}
+
+	public void add(int x, int y, int z) {
+		System.out.println(x + y + z);
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Method_Overloading object = new Method_Overloading();
+		obj.add(25, 10);
+		obj.add(5, 3, 2);
+
+	}
+-------------------------------------------------------------------------------
+5. Method overriding:
+If the same method is defined in both the superclass and the subclass, then the method of the subclass class overrides the method of the superclass. 
+This is known as method overriding.
+
+Example: 
+class Cat {
+	public void displayInfo() {
+		System.out.println("I am a cat.");
+	}
+}
+
+class Dog extends Cat{
+	public void displayInfo() {
+		System.out.println("I am a dog.");
+	}
+}
+
+public class Method_overriding {
+
+	public static void main(String[] args) {
+		
+		Dog dog = new Dog();
+		dog.displayInfo();
+
+	}
+
+-------------------------------------------------------------------
+6. Example of Selenium in inheritance:
+i) Remote Webriver - Super class
+ii) Chromium WebDriver - Sub-Class
+iii) Chrome WebDriver - Child Class
